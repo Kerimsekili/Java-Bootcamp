@@ -13,6 +13,21 @@ public class HelloWorld {
             number1 = number2;
             System.out.println("number1=" + number1);
 
+            double a = 3.0, b = 4.0;
+            // c is dynamically initialized
+            double c = Math.sqrt(a * a + b * b);
+            System.out.println("Hypotenuse is " + c);
+
+
+            int x;
+            for(x = 0; x < 3; x++) {
+                int y = -1; // y is initialized each time block is entered
+                System.out.println("y is: " + y); // this always prints -1
+                y = 100;
+                System.out.println("y is now: " + y);
+            }
+
+
 
             // int[] numbers1 = {1, 2, 3};
             // int[] numbers2 = {10, 20, 30};
